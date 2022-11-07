@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using System.Xml.Linq;
 
 namespace Singly_linked_list
 {
@@ -97,7 +98,20 @@ class LIst
     }
 
     public void Traverse()
+    {
+        if (listEmpty())
+            Console.WriteLine();
+        else
+        {
+            Console.WriteLine();
+            node currentNode;
+            for (currentNode = START; currentNode != null;
+                currentNode = currentNode.next)
+                Console.Write(currentNode.rollnumber + "" + currentNode.name + "\n");
+            Console.WriteLine();
 
+        }
+    }
 
 
 
