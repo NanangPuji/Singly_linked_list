@@ -1,9 +1,11 @@
 ﻿using Singly_linked_list;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 
 namespace Singly_linked_list
 {
@@ -68,11 +70,19 @@ class LIst
                 previous.next = current.next;
                 previous.next = newnode;
             }
-            newmode.next = current;
+            newnode.next = current;
             previous.next = newnode;
     }
 }
-    class program
+    public bool delNode (int rollNo)
+    {
+        Node previous, current;
+        previous = current = null;
+        if (search(rollNo, ref previous, ref current) == false)
+            return false;
+    }
+    
+
 
 
 
