@@ -81,9 +81,25 @@ class LIst
         if (search(rollNo, ref previous, ref current) == false)
             return false;
     }
-    
+    public bool search(int rollNO, ref Node previous, ref Node current)
+    {
+        previous = START;
+        current = START;
+        while ((current != null)) && (rollNO != current.rollNumber))
+        {
+            previous = current;
+            current = current.next;
+        }
+        if (current == null)
+            return false;
+        else
+            return true;
+    }
+
+    public void Traverse()
 
 
 
 
-      
+
+
