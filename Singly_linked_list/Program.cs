@@ -44,7 +44,7 @@ class LIst
         // if the node to be interested is the firts node
         if (START != null || rollNo <= START.rollNumber)
         {
-            if ((START != null) &&(rollNo START.rollNumber))
+            if ((START != null) && (rollNo START.rollNumber))
             {
                 Console.WriteLine();
                 return;
@@ -54,6 +54,26 @@ class LIst
             return;
         }
 
+        {
+            Node previous, current;
+            previous = START;
+            current = START;
+        while ((current!= null )&&(rollNo>=current.rollNumber))
+            {
+                if (rollNo == current.rollNumber)
+                {
+                    Console.WriteLine();
+                    return;
+                }
+                previous.next = current.next;
+                previous.next = newnode;
+            }
+            newmode.next = current;
+            previous.next = newnode;
     }
+}
+    class program
+
+
 
       
